@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /E:\FastUp new
     destination: /var/www/html
 permissions:
   - object: /var/www/html
