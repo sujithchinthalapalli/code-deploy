@@ -1,0 +1,83 @@
+<style>
+    .cursor {
+        margin-right: 30px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .app-header .brand {
+        display: inline-block;
+        /* text-align: left; */
+        float: none;
+    }
+    
+    .space {
+        margin-top: 8px;
+    }
+    
+    #cdk-overlay-0 {
+        position: static !important;
+        text-align: -webkit-right !important;
+        margin-top: 19% !important;
+    }
+    
+    nav ul li a,
+    nav ul li a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: 70px;
+        background: transparent;
+        color: #4e5860;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    a {
+        font-weight: 400;
+    }
+</style>
+<section class="app-header">
+    <div class="app-header-inner" [ngClass]="{'bg-color-light': ['11','12','13','14','15','16','21'].indexOf(AppConfig.colorOption) >= 0,
+               'bg-color-dark': AppConfig.colorOption === '31',
+               'bg-color-primary': ['22','32'].indexOf(AppConfig.colorOption) >= 0,
+               'bg-color-success': ['23','33'].indexOf(AppConfig.colorOption) >= 0,
+               'bg-color-info': ['24','34'].indexOf(AppConfig.colorOption) >= 0,
+               'bg-color-warning': ['25','35'].indexOf(AppConfig.colorOption) >= 0,
+               'bg-color-danger': ['26','36'].indexOf(AppConfig.colorOption) >= 0}">
+
+
+        <section class="navigation">
+            <div class="brand">
+                <img class="cursor" [routerLink]="['']" src="assets/images/background/fastuplogo.png">
+            </div>
+            <nav>
+
+                <div class="nav-mobile">
+                    <button mat-button [matMenuTriggerFor]="menu" id="nav-toggle"></button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Products</button>
+                        <button mat-menu-item>Solutions</button>
+                        <button mat-menu-item>Resources</button>
+                        <button mat-menu-item>Blog</button>
+                        <button mat-menu-item>Pricing</button>
+                        <button mat-menu-item [routerLink]="['/extra/login']">Sign In</button>
+
+                    </mat-menu>
+                </div>
+
+                <!-- <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div> -->
+                <ul class="nav- ">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a [routerLink]="['/extra/login']">Sign In</a></li>
+                </ul>
+
+            </nav>
+        </section>
+
+
+    </div>
+</section>

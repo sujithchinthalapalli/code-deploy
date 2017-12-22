@@ -1,0 +1,623 @@
+<section class="container-fluid with-maxwidth chapter ">
+    <article class="article">
+
+        <div class="row">
+
+            <div class="col-xl-12">
+                <div class="card card-white ">
+
+                    <div class="card-image ">
+
+                        <img src="assets/images/background/orange.png" style="height:260px;">
+                        <!-- <div class="col-md-8"> -->
+                        <span class="card-title ">{{modelrlist.Name}}</span>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="container">
+
+                        <div class="card-content">
+                            <a class="card-profile-img float-left" href="javascript:;"><img src={{modelrlist.imageurl}} alt=""></a>
+                        </div>
+
+                        <div class="col-md-12 box-header text-right"><strong>Estimated Cost </strong>&nbsp;<button mat-raised-button color="primary" disabled>$ 250</button>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div class="row grid-divider" *ngIf=isedit1>
+
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                    <b>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <strong><p class="text">Highlights</p></strong>
+                                <div class="box-body ">
+                                    This Template creates an Architecture Stack providing a highly available web application server.It is fronted by a CDN and
+                                    backed by RDS MySQL Database.This will scale to millions of users and development workflow
+                                    is backed in.
+                                </div>
+                                
+                                <form novalidate="" role="form" class="ng-untouched ng-pristine ng-valid">
+                                        <div class="form-group row">
+                                            <p class="col-md-3 control-label text" for="inputEmail3">Infrastructure location:</p>
+                                            <div class="col-md-4">
+                                                <input class="form-control" id="inputEmail3" placeholder="Ohio" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <p class="col-md-3 control-label text" for="inputEmail3">CDN Edge locations:</p>
+                                            <div class="col-md-4">
+                                                <input class="form-control" id="inputEmail3" placeholder="Worldwide" type="email">
+                                            </div>
+                                        </div>
+     
+                                    </form>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun1()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        <div class="row grid-divider" *ngIf=isedit2>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                    <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+                            <div class="col-md-9" >
+                                <strong><p class="text">Environment</p></strong>
+                                <div class="box-body ">
+                                    Developed code flows through dev, test and production environments. Specify any additional environments here.
+                                </div>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun0()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun2()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row grid-divider" *ngIf=isedit3>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                    <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun1()'>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <strong><p class="text">Database Initialization</p></strong>
+                                <div class="box-body ">
+                                    Upload DDL and DML statements here. These will be run on database creation. For subsequent releases, just change code in.Alla
+                                    scripts will always be run in each environment.
+                                </div>
+                                <form novalidate="" role="form" class="ng-untouched ng-pristine ng-valid">
+                                        <div class="form-group row">
+                                            <p class="col-md-1 control-label text" for="inputEmail3">DDL</p>
+                                            <div class="col-md-4">
+                                                <input class="form-control" id="inputEmail3" placeholder="Ohio" type="email">
+                                            </div>
+                                            <div class="col-md-4">
+                                            <button mat-raised-button color="warning"  class="btn-w-xl list-unstyled">Browse</button>
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <p class="col-md-1 control-label text" for="inputEmail3">DML</p>
+                                            <div class="col-md-4">
+                                                <input class="form-control" id="inputEmail3" placeholder="Worldwide" type="email">
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <button mat-raised-button color="warning"  class="btn-w-xl list-unstyled">Browse</button>
+                                                </div>
+                                        </div>
+     
+                                    </form>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun1()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun3()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row grid-divider" *ngIf=isedit4>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                      <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun1()'>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun2()'>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+                            <div class="col-md-9" >
+                                <strong><p class="text">Users</p></strong>
+                                <div class="box-body ">
+                                    By default, we create one developer and one tester in the system. The developer has rights to approve code for Production.
+
+                                </div>
+                                <p class="text1">Please identify these.</p>
+                                <div class="box box-default table-box table-responsive mdl-shadow--2dp">
+                                        <table class="mdl-data-table">
+                                          <thead>
+                                            <tr>
+                                              <th class="mdl-data-table__cell--non-numeric"><b>First Name</b></th>
+                                              <th><b>Last Name</b></th>
+                                              <th><b>Role</b></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>                                          
+                                             <td class="mdl-data-table__cell--non-numeric">Bhakta</td>
+                                              <td>N</td>
+                                              <td>Developer</td>
+                                            </tr>
+                                            <tr>
+                                             <td class="mdl-data-table__cell--non-numeric">Sumanth</td>
+                                              <td>CH</td>
+                                              <td>Tester</td>
+                                            </tr>
+                                            
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun2()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun4()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row grid-divider" *ngIf=isedit5>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                   <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun1()'>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun2()'> Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b (click)='fun3()'>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-9" >
+                                <strong><p class="text">Naming</p></strong>
+                                <div class="box-body ">
+                                    For free trail we setup this template on a randomly generated URL.If you would like to use a custom domain name,please request
+                                    an invite.
+                                </div>
+                                <p class="text1">Your new app URL is: https://randomname.fastup.com</p>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun3()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun5()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="row grid-divider" *ngIf=isedit6>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                     <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun1()'>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun2()'>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun3()'>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b (click)='fun4()'>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 text-muted">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9" >
+                                <strong><p class="text">Review</p></strong>
+                                <div class="box-body ">
+                                    Please review and create
+                                </div>
+                                <form novalidate="" role="form" class="ng-untouched ng-pristine ng-valid">
+                                        <div class="form-group row">
+                                            <p class="col-md-3 control-label text" for="inputEmail3">Bhakta N</p>
+                                            <div class="col-md-6">
+                                                    <p class="col-md-5 control-label text" for="inputEmail3">Developer</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="form-group row">
+                                            <p class="col-md-3 control-label text" for="inputEmail3">Sumanth CH</p>
+                                            <div class="col-md-6">
+                                                    <p class="col-md-6 control-label text" for="inputEmail3">Tester</p>
+                                            </div>
+                                           
+                                        </div>
+     
+                                    </form>
+                                    <p class="text1">App URL: https:randomname.fastup.com</p>
+                                    <div class="box-body ">
+                                            Please provide your email if you would like to notified and also would like an extended trail for 24 hours.(Otherwise,your infrastructure will be deleted in 2 hours).
+                                        </div>
+                                        <form novalidate="" role="form" class="ng-untouched ng-pristine ng-valid">
+                                                <!-- <div class="form-group row"> -->
+                                                   
+                                                    <div class="col-md-4">
+                                                        <input class="form-control" id="inputEmail3" placeholder="you@domain.com" type="email">
+                                                    </div>
+                                                   
+                                                <!-- </div> -->
+                                               
+             
+                                            </form>
+                                            <br>
+                                            <form novalidate="" role="form" class="ng-untouched ng-pristine ng-valid" style="margin: 16px;">
+                                                        <div class="form-group row">
+                                                     <div class="col-md-2">
+                                                         
+                                                         <button mat-raised-button color="primary"class="btn-w-xl list-unstyled" disabled>Capture</button>
+                                                     </div>
+                                                     <div class="col-md-3">
+                                                            <input class="form-control col-md-8" id="inputEmail3" placeholder="Enter here" type="email">
+                                                           
+                                                        </div>
+                                                        <!-- <div class="col-md-4">                                                                   
+                                                                <button mat-raised-button color="primary"class="btn-w-xl list-unstyled">Create</button>
+                                                            </div> -->
+                                                      </div>
+                                                        </form>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun4()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun6()' class="btn-w-xl list-unstyled float-right">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row grid-divider" *ngIf=isedit7>
+                            <div class="col-sm-3">
+                                <div class="col-xl-12">
+                                     <b (click)='fun0()'>Step:1  Highlights</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun1()'>Step:2  Environments</b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12">
+                                    <b (click)='fun2()'>Step:3  DataBase Initialization </b>
+                                </div>
+
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b (click)='fun3()'>Step:4  Users</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b (click)='fun4()'>Step:5  Naming</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b (click)='fun5()'>Step:6  Review</b>
+                                </div>
+                                <br>
+                                <div class="col-xl-12 ">
+                                    <b>Step:7  Congratulations</b>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9" >
+                                <strong><p class="text">Congratulations</p></strong>
+                                <div class="box-body ">
+                                    This type of infrostructure usually takes 30 to 60 minutes to be ready. Please refresh this page on bookmark this link, (https://app.fastup.com/trail/randomlygeneratedid)
+                                </div>
+                                <p class="text1">Since you did provided your email address, we have sent this information to you and will
+                                    leave this on for you to try for 24 hours. Please request an invite if you would like
+                                    to know more about purchasing or longer trails.
+
+                                </p>
+                                <strong><p class="text">Support</p></strong>
+                                <p class="text1">Remember that every infracture on FastUp comes with 24/7/365 support included. Please go
+                                    to support.fastup.com for requesting support.</p>
+                                <br>
+                                <br>
+                                <div class="test1">
+                                    <div style="float: left; margin:25px;">
+                                        <button mat-raised-button color="primary" (click)='fun5()' class="btn-w-xl list-unstyled float-left">Previous</button>
+                                    </div>
+                                    <div style="float: right;  margin:25px;">
+                                        <button mat-raised-button color="primary"  [routerLink]="['Mainapp/maindashboard']"   class="btn-w-xl list-unstyled float-right">Done</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+
+
+</section>
+
+<style>
+  .box.table-box {
+    border-radius: 0;
+    margin: 15px;
+}
+    .card .card-content .card-profile-img {
+        /* width: 150px;
+        height: 140px; */
+        width: 127px;
+        height: 123px;
+        border: 1px solid gray;
+        margin-top: -90px;
+    }
+
+    .test1 {
+        width: 60%;
+        display: inline;
+        overflow: auto;
+        white-space: nowrap;
+        margin: 0px auto;
+    }
+
+    .text {
+        margin: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Avenir LT W01_65 Medium1475532', helvetica, arial
+    }
+
+    .text1 {
+        margin: 15px;
+        font-size: 14px;
+        font-family: 'Avenir LT W01_65 Medium1475532', helvetica, arial
+    }
+    /* Tablet and bigger */
+
+    @media ( min-width: 768px) {
+        .grid-divider {
+            position: relative;
+            padding: 0;
+        }
+        .grid-divider>[class*='col-'] {
+            position: static;
+        }
+        .grid-divider>[class*='col-']:nth-child(n+2):before {
+            content: "";
+            border-left: 1px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        .col-padding {
+            padding: 0 15px;
+        }
+    }
+
+    .card .card-content .card-profile-img img {
+        /* width: 140px;
+        height: 130px; */
+        width: 115px;
+        height: 112px;
+    }
+
+    .card {
+        border: 0px solid white;
+        margin: -30px;
+    }
+
+    .card .card-image .card-title {
+        bottom: -10px;
+        left: 8%;
+        /* margin: 170px; */
+        margin:155px;
+        margin-bottom: 0px;
+    }
+
+    .mat-button,
+    .mat-raised-button,
+    .mat-icon-button,
+    .mat-fab,
+    .mat-mini-fab {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+</style>

@@ -1,0 +1,83 @@
+
+<style>
+.row1 {
+   
+    display: flex;
+   
+    flex-wrap: wrap;
+    
+}
+    </style>
+
+<div class="block__main">
+    <div class="content">
+        <div class="row1 justify-content-md-center">
+            <div class="col-md-7">
+                <div class="card ">
+                    <div class="box-header " style="text-align:center">
+
+                        <h5>Billing</h5>
+                    </div>
+                    <form action="" method="post" class="form-horizontal" [formGroup]="myForm1">
+                        <div class="input-group ">
+                            <p class="col-md-3" type="text"> Role* </p>
+                            <input type="text" formControlName="role" class=" form-control col-md-6" placeholder="Role" (input)="modelb.role = $event.target.value">
+                        </div>
+                         <div *ngIf="myForm1.controls['role'].hasError('required') && myForm1.controls['role'].touched" class="error">You must include a Role.</div>
+                      
+                        <br>
+                        <div class="input-group ">
+                            <p class=" col-md-3" type="text"> FirstName* </p>
+                            <input type="text" formControlName="firstname" placeholder="FirstName" class=" form-control col-md-6" (input)="modelb.FirstName = $event.target.value">
+                        </div>
+                         <div *ngIf="myForm1.controls['firstname'].hasError('required') && myForm1.controls['firstname'].touched" class="error">You must include a FirstName.</div>
+                      
+                        <br>
+                        <div class="input-group ">
+                            <p class=" col-md-3" type="text"> LastName* </p>
+                            <input type="text" formControlName="lastname" class=" form-control  col-md-6" placeholder="LastName" (input)="modelb.LastName = $event.target.value">
+                        </div>
+                         <div *ngIf="myForm1.controls['lastname'].hasError('required') && myForm1.controls['lastname'].touched" class="error">You must include a LastName.</div>
+                      
+                        <br>
+                        <div class="input-group ">
+                            <p class="col-md-3" type="text"> Company* </p>
+                            <input type="text" formControlName="company" class=" form-control  col-md-6" placeholder="Company" (input)="modelb.Company = $event.target.value">
+                        </div>
+                         <div *ngIf="myForm1.controls['company'].hasError('required') && myForm1.controls['company'].touched" class="error">You must include a Company.</div>
+                      
+                        <br>
+                        <div class="input-group ">
+                            <p class=" col-md-3" type="text"> CreditCardNo* </p>
+                            <input type="text" formControlName="creditcard" class=" form-control  col-md-6" placeholder="CreditCardNo" (input)="modelb.CreditCard = $event.target.value">
+                        </div>
+                         <div *ngIf="myForm1.controls['creditcard'].hasError('required') && myForm1.controls['creditcard'].touched" class="error">You must include a CreditCardNumber.</div>
+                      
+                        <br>
+                        <div class="input-group ">
+                            <p class="col-md-3" type="text"> ExpiresOn* </p>
+                            <input type="text" formControlName="expireson" class=" form-control  col-md-6" placeholder="ExpiresOn" (input)="modelb.ExpiresOn = $event.target.value">
+                        </div>
+                        <div *ngIf="myForm1.controls['expireson'].hasError('required') && myForm1.controls['expireson'].touched" class="error">You must include a ExpiresOnDate.</div>
+                        <br>
+                        <div class="input-group ">
+                            <p class=" col-md-3" type="text"> NameOnCard* </p>
+                            <input type="text" formControlName="nameoncard" class=" form-control  col-md-6" placeholder="NameOnCard" (input)="modelb.NameOnCard = $event.target.value">
+
+                        </div>
+                        <div *ngIf="myForm1.controls['nameoncard'].hasError('required') && myForm1.controls['nameoncard'].touched" class="error">You must include a NameOnCard.</div>
+                        <br>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="button"  [disabled]="!myForm1.valid" (click)="postBilling()"> Submit </button>
+                        </div>
+                        <br>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

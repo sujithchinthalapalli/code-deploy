@@ -1,0 +1,67 @@
+<div class="block__main">
+    <div class="content">
+        <div id='container'>
+
+
+            <!--<form action="" method="post" class="form-horizontal" [formGroup]="myForm1">-->
+
+            <div class="input-group col-md-12">
+                <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > Role </button>  </span>
+                <input type="text" placeholder="Role" (input)="modelin.role = $event.target.value">
+<!--formControlName="role"-->
+
+            </div>
+
+
+            <div class="input-group col-md-12">
+                <span class="input-group-btn">    <button class="btn btn-danger" type="button"   > FirstName </button>  </span>
+                <input type="text"placeholder="FirstName" (input)="modelin.FirstName = $event.target.value">
+
+<!--formControlName="firstname"-->
+            </div>
+            <div class="input-group col-md-12">
+                                            <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > LastName </button>  </span>
+                                            <input type="text"  placeholder="LastName" (input)="modelin.LastName = $event.target.value">
+
+<!--formControlName="lastname" -->
+
+                                        </div>
+                                          <div class="input-group col-md-12">
+                                            <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > Company </button>  </span>
+                                            <input type="text"   placeholder="Company" (input)="modelin.Company = $event.target.value">
+
+<!--formControlName="company"-->
+
+                                        </div>
+                                         <div class="input-group col-md-12">
+                                            <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > CreditCardNo </button>  </span>
+                                            <input type="text"  placeholder="CreditCardNo" (input)="modelin.CreditCard = $event.target.value">
+
+ <!--formControlName="creditcard" -->
+
+                                        </div>
+                                         <div class="input-group col-md-12">
+                                            <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > ExpiresOn </button>  </span>
+                                            <input type="text"    placeholder="ExpiresOn" (input)="modelin.ExpiresOn = $event.target.value">
+
+<!--formControlName="expireson"-->
+
+                                        </div>
+                                           <div class="input-group col-md-12">
+                                            <span class="input-group-btn">   <button class="btn btn-danger" type="button"   > NameOnCard </button>  </span>
+                                            <input type="text"   placeholder="NameOnCard" (input)="modelin.NameOnCard = $event.target.value">
+
+ <!--formControlName="nameoncard"-->
+
+                                        </div>
+
+
+ <span class="input-group-btn">   <button class="btn btn-primary" type="button"  (click)="postBilling()"   > Submit </button>  </span>
+                                       
+
+
+
+            <!--</form>-->
+        </div>
+    </div>
+</div>

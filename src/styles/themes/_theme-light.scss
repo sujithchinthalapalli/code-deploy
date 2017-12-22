@@ -1,0 +1,17 @@
+// default light theme
+// for boxed-layout
+html,
+body,
+{
+    font-family: 'Avenir LT W01_45 Book1475508', helvetica, arial;
+}
+
+.app-page-container .app-content-wrapper {
+    background-color: $page_bg;
+}
+
+@media only screen and (max-width: $l_screen_sm_max) {
+    .app-page-container {
+        background-color: $page_bg;
+    }
+}

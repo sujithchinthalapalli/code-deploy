@@ -1,0 +1,42 @@
+<section class="app-header">
+    <div class="app-header-inner" [ngClass]="{'bg-color-light': ['11','12','13','14','15','16','21'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-dark': AppConfig.colorOption === '31',
+                 'bg-color-primary': ['22','32'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-success': ['23','33'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-info1': ['24','34'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-warning': ['25','35'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-danger': ['26','36'].indexOf(AppConfig.colorOption) >= 0}">
+
+        <div class="d-lg-none d-xl-none float-left">
+            <button mat-button myToggleOffcanvasNav class="md-button header-icon toggle-sidebar-btn">
+        <i class="material-icons">menu</i>
+      </button>
+        </div>
+
+
+        <div class="brand d-none d-lg-inline-block d-xl-inline-block">
+            <div class="brand">
+                <img class="cursor" [routerLink]="['']" src="assets/images/background/fastuplogo.png">
+            </div>
+        </div>
+
+
+
+        <div class="top-nav-right">
+            <label class="dropdown">
+
+                <div class="dd-button">
+                  <img src="assets/images/g1.jpg" class="right" alt="">
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                  <li (click)="logout()">Logout</li>
+                </ul>
+                
+              </label>
+        </div>
+
+    </div>
+</section>
