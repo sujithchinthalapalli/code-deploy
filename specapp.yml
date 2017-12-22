@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /E:\FastUp new
+  - source: /
     destination: /var/www/html
 permissions:
   - object: /var/www/html
@@ -20,3 +20,7 @@ hooks:
   AfterInstall:
    - location: scripts/restartapache.sh
      runas: root
+     
+artifacts:
+  files:
+    - /target/wallet-core-1.0.0.war
