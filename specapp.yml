@@ -1,13 +1,22 @@
-version: 0.2
-
-phases:
-  build:
-    commands:
-      - aws s3 cp --recursive public/ s3://$WEBSITE_S3_BUCKET/public/ --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
-      - sed -i -e "s|assets/|$WEBSITE_S3_PREFIX/public/assets/|g" public/index.html
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
-
-artifacts:
-  type: zip
-  files:
-    - template-export.yml
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+permissions:
+  - object: /var/www/html
+    pattern: "**"
+    owner: apache
+    group: apache
+    mode: 755
+    type:
+      - file
+hooks:
+  BeforeInstall:
+   - location: scripts/installapache.sh
+     runas: root
+   - location: scripts/startapache.sh
+     runas: root
+  AfterInstall:
+   - location: scripts/restartapache.sh
+     runas: root
