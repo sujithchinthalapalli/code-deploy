@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.0
 os: linux
 files:
   - source: /
@@ -20,13 +20,3 @@ hooks:
   AfterInstall:
    - location: scripts/restartapache.sh
      runas: root
-     
-phases:
-  pre_build:
-    commands:      
-      - echo *** Pre-Build ***
-      - cp envs/.env.test .env      
-      - composer install --no-interaction     
-artifacts:    
-  files:
-    - '**/*'
